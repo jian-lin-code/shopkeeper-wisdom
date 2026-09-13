@@ -2,4 +2,22 @@
 name = "shopkeeper-wisdom"
 version = "0.1.0"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "colorlog>=6.12.0",
+    "fastapi>=0.141.1",
+    "grandalf>=0.8",
+    "langchain>=1.4.0",
+    "langchain-openai>=1.6.2",
+    "langchain-text-splitters>=1.1.2",
+    "langgraph>=1.2.11",
+    "minio>=7.2.20",
+    "numpy>=2.4.6",
+    "pymongo>=4.18.1",
+    "python-dotenv>=1.2.3",
+    "sync>=1.0.0",
+    "tree>=0.2.4",
+]
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
