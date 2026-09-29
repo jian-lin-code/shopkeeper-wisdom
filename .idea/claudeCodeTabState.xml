@@ -14,7 +14,19 @@
             </TabSessionState>
           </value>
         </entry>
+        <entry key="1">
+          <value>
+            <TabSessionState>
+              <option name="provider" value="claude" />
+              <option name="sessionId" value="641d5a07-ece0-45fe-939e-6f8eead2a5c6" />
+              <option name="cwd" value="C:\Users\xiaojianlin\Desktop\project\shopkeeper-wisdom" />
+              <option name="model" value="claude-sonnet-5[1m]" />
+              <option name="permissionMode" value="acceptEdits" />
+            </TabSessionState>
+          </value>
+        </entry>
       </map>
     </option>
+    <option name="tabCount" value="2" />
   </component>
 </project>

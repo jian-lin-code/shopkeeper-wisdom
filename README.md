@@ -29,3 +29,16 @@ uv sync --reinstall
 
 #必要时清理uv缓存，重新下载所有的依赖
 #uv缓存的位置由环境变量 UV_CACHE_DIR 指定 
+
+
+mineru本地部署（PowerShell 里面执行）
+1. uv pip install -U "mineru[all]" -i https://mirrors.aliyun.com/pypi/simple
+2. set MINERU_MODEL_SOURCE=modelscope   配置下载源（当前 CMD 窗口临时生效）
+3. set MODELSCOPE_CACHE=D:\ai_models\mineru    模型存放目录
+4. mineru-models-download  下载 
+
+提示：`mineru[core]` / `mineru[all]` **会自动装上 torch，但是默认是 CPU 版本**
+        CPU 版 torch 只能跑 CPU 推理，** GTX1660 想要 GPU 加速需要配置**
+uv pip install torch torchvision torchaudio --torch-backend=cu128 --no-cache 
+
+
